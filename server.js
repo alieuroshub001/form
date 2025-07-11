@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, 'src')));
 
 // Password check endpoint
-const checkPassword = require('./src/api/check-password');
+const checkPassword = require('./api/check-password');
 app.post('/api/check-password', checkPassword);
 
 // Serve index.html for all other routes
